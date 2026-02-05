@@ -1,7 +1,8 @@
 # Simple Calculator in Python
 # Supports basic arithmetic operations: +, -, *, /
+# Added loop run & manual exit function (v2.0)
 # Author: nqilin
-# Date: 2026 
+# Date: 2026
 
 def add(a, b):
     """Return the sum of a and b"""
@@ -22,37 +23,44 @@ def divide(a, b):
     return a / b
 
 def main():
-    print("===== Simple Calculator =====")
-    print("Select operation:")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
+    print("===== Simple Calculator (v2.0) =====")
+    while True:  # Core update: loop run until user exit
+        print("\nSelect operation:")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Exit Calculator")  # Core update: exit option
 
-    # Get user input
-    choice = input("Enter choice (1/2/3/4): ")
+        # Get user input for operation choice
+        choice = input("Enter choice (1/2/3/4/5): ")
 
-    # Check if choice is valid
-    if choice in ['1', '2', '3', '4']:
-        try:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
-        except ValueError:
-            print("Error! Please enter a valid number.")
-            return
+        # Exit the calculator if user select 5
+        if choice == '5':
+            print("Thank you for using the calculator! Goodbye.")
+            break  # Terminate the while loop
 
-        # Perform calculation based on choice
-        if choice == '1':
-            print(f"Result: {num1} + {num2} = {add(num1, num2)}")
-        elif choice == '2':
-            print(f"Result: {num1} - {num2} = {subtract(num1, num2)}")
-        elif choice == '3':
-            print(f"Result: {num1} * {num2} = {multiply(num1, num2)}")
-        elif choice == '4':
-            result = divide(num1, num2)
-            print(f"Result: {num1} / {num2} = {result}")
-    else:
-        print("Invalid input! Please select a valid operation.")
+        # Check if choice is a valid operation
+        if choice in ['1', '2', '3', '4']:
+            try:
+                num1 = float(input("Enter first number: "))
+                num2 = float(input("Enter second number: "))
+            except ValueError:
+                print("Error! Please enter a valid number.")
+                continue  # Skip current iteration, back to operation selection
+
+            # Perform corresponding calculation
+            if choice == '1':
+                print(f"Result: {num1} + {num2} = {add(num1, num2)}")
+            elif choice == '2':
+                print(f"Result: {num1} - {num2} = {subtract(num1, num2)}")
+            elif choice == '3':
+                print(f"Result: {num1} * {num2} = {multiply(num1, num2)}")
+            elif choice == '4':
+                result = divide(num1, num2)
+                print(f"Result: {num1} / {num2} = {result}")
+        else:
+            print("Invalid input! Please select a valid option (1-5).")
 
 if __name__ == "__main__":
     main()
