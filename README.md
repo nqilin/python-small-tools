@@ -12,14 +12,21 @@ Classified by functional scenarios, each tool has an independent directory (incl
     Excel-CSV-Handle/
     Data-Cleaning/
     Simple-Analysis/
+    **List-Utils/ ✅ Completed**
 - Web-Crawler/
     Simple-Crawler/
     Wallpaper-Crawler/
     Book-List-Crawler/
 - Daily-Tools/
     To-Do-List/
-    Simple-Calculator/
+    **Simple-Calculator/ ✅ Completed**
     Password-Generator/
+### ✅ Finished Tools (With Runnable Code + English README)
+All completed tools follow the development standard, with independent directory, complete code comments and detailed usage documentation.
+- [Simple-Calculator](Simple-Calculator/) (Daily-Tools)
+  - Basic arithmetic operations (+-*/) | V2.0 Loop Run + Manual Exit | Input validation & error handling
+- [List-Utils](List-Utils/) (Data-Processing)
+  - Numeric list duplicate removal | Asc/Desc custom sort | Comprehensive input validation
 
 ## 🎯 Development Objective
 - Master Python basic development (file I/O, network request, data processing, etc.);
@@ -47,6 +54,7 @@ Combine design skills with tool development to achieve "function + vision" dual 
 4. With design files (UI prototype/screenshot) and running effect display.
 
 ## 📈 Update Plan
+- **Current Progress**: 2 lightweight tools completed (Simple-Calculator/List-Utils), follow the development standard;
 - Develop 1 small function every day (complete one tool module in 3-5 days);
 - Supplement design files and running documentation while developing the tool;
 - Optimize the existing tool code and design effect regularly (1 per week).
