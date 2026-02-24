@@ -40,22 +40,22 @@ Python-Small-Tools/
 ## ✅ Finished Tools
 All completed tools follow strict development standards (independent directory + full comments + detailed usage docs):
 
-### 1. Simple-Calculator (Daily-Tools)
+### [1. Simple-Calculator (Daily-Tools)](simple-calculator)
 - Basic arithmetic operations (+-*/)
 - V2.0: Loop run + manual exit
 - Complete input validation & error handling
 
-### 2. List-Utils (Data-Processing)
+### [2. List-Utils (Data-Processing)](list-utils)
 - Numeric list duplicate removal
 - Custom ascending/descending sort
 - Comprehensive input validation
 
-### 3. Batch-Rename (File-Processing)
+### [3. Batch-Rename (File-Processing)](Batch-Rename)
 - Batch rename files in a directory
 - Support custom prefix/suffix & numbering rules
 - Preview mode before renaming
 
-### 4. Excel-Cell-Extractor (Data-Processing)
+### [4. Excel-Cell-Extractor (Data-Processing)](excel-cell-extractor)
 - Extract specific cells/ranges from Excel files
 - Support CSV/Excel output
 - Handle multiple sheets
