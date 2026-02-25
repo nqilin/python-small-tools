@@ -26,13 +26,13 @@ Python-Small-Tools/
 │   ├── Simple-Analysis/
 │   └── List-Utils/ ✅ Completed
 ├── Web-Crawler/
-│   ├── Simple-Crawler/
+│   ├── Simple-Crawler/ ✅ Completed
 │   ├── Wallpaper-Crawler/
 │   └── Book-List-Crawler/
 └── Daily-Tools/
-    ├── To-Do-List/
+    ├── To-Do-List/ ✅ Completed
     ├── Simple-Calculator/ ✅ Completed
-    └── Password-Generator/ 
+    └── Password-Generator/ ✅ Completed
 ```
 
 ---
@@ -40,25 +40,44 @@ Python-Small-Tools/
 ## ✅ Finished Tools
 All completed tools follow strict development standards (independent directory + full comments + detailed usage docs):
 
-### [1. Simple-Calculator (Daily-Tools)](simple-calculator)
+### [1. Simple-Calculator (Daily-Tools)](Daily-Tools/simple-calculator)
 - Basic arithmetic operations (+-*/)
 - V2.0: Loop run + manual exit
 - Complete input validation & error handling
 
-### [2. List-Utils (Data-Processing)](list-utils)
+### [2. List-Utils (Data-Processing)](Data-Processing/list-utils)
 - Numeric list duplicate removal
 - Custom ascending/descending sort
 - Comprehensive input validation
 
-### [3. Batch-Rename (File-Processing)](Batch-Rename)
+### [3. Batch-Rename (File-Processing)](File-Processing/Batch-Rename)
 - Batch rename files in a directory
 - Support custom prefix/suffix & numbering rules
 - Preview mode before renaming
 
-### [4. Excel-Cell-Extractor (Data-Processing)](excel-cell-extractor)
+### [4. Excel-Cell-Extractor (Data-Processing)](Data-Processing/excel-cell-extractor)
 - Extract specific cells/ranges from Excel files
 - Support CSV/Excel output
 - Handle multiple sheets
+
+### [5. Password-Generator (Daily-Tools)](Daily-Tools/Password-Generator)
+- Customizable password length (8-20 characters)
+- Support character types: uppercase, lowercase, digits, special symbols
+- Complete input validation & secure random generation
+- Loop run + manual exit
+
+### [6. To-Do-List (Daily-Tools)](Daily-Tools/To-Do-List)
+- Task CRUD operations (add/view/complete/delete)
+- Data persistence via file I/O (saved to todo_list.txt)
+- Timestamp tracking for each task
+- Interactive menu system with input validation
+
+### [7. Simple-Crawler (Web-Crawler)](Web-Crawler/Simple-Crawler)
+- HTTP requests with headers, timeout, and error handling
+- HTML parsing with BeautifulSoup4 (title, paragraphs, links)
+- Responsible crawling with 1-second delay
+- Results saved to structured text files
+- Chinese character encoding support
 
 ---
 
