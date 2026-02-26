@@ -17,8 +17,8 @@ Classified by functional scenarios, each tool has an independent directory (incl
 Python-Small-Tools/
 ├── File-Processing/
 │   ├── Batch-Rename/ ✅ Completed
-│   ├── Format-Conversion/
-│   └── File-Filter/
+│   ├── Format-Conversion/ ✅ Completed
+│   └── File-Filter/ ✅ Completed
 ├── Data-Processing/
 │   ├── Excel-CSV-Handle/
 │   ├── Excel-Cell-Extractor/ ✅ Completed
@@ -27,7 +27,7 @@ Python-Small-Tools/
 │   └── List-Utils/ ✅ Completed
 ├── Web-Crawler/
 │   ├── Simple-Crawler/ ✅ Completed
-│   ├── Wallpaper-Crawler/
+│   ├── Wallpaper-Crawler/ ✅ Completed
 │   └── Book-List-Crawler/
 └── Daily-Tools/
     ├── To-Do-List/ ✅ Completed
@@ -78,6 +78,27 @@ All completed tools follow strict development standards (independent directory +
 - Responsible crawling with 1-second delay
 - Results saved to structured text files
 - Chinese character encoding support
+
+### [8. Wallpaper-Crawler (Web-Crawler)](Web-Crawler/Wallpaper-Crawler)
+- Fetch latest Bing daily wallpapers via official API (legal & stable)
+- Batch download with stream mode (supports large image files)
+- Safe filename generation + dedicated download directory
+- Random delay between requests to avoid rate limiting
+- Complete error handling for network & file operations
+
+### [9. Format-Conversion (File-Processing)](File-Processing/Format-Conversion)
+- Support TXT→MD, CSV→TXT, JPG→PNG, PNG→JPG conversions
+- Auto file encoding detection (supports multi-language files)
+- Batch processing for single file or entire directory
+- Image transparency handling (RGBA to RGB for JPG)
+- Organized output directory + conversion summary report
+
+### [10. File-Filter (File-Processing)](File-Processing/File-Filter)
+- Multi-condition filtering: size, extension, modified time
+- Recursive directory scanning with detailed file attributes
+- Support list/copy/move actions (duplicate filename handling)
+- No external dependencies (Python standard library only)
+- Human-readable output with progress & success summary
 
 ---
 
