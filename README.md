@@ -20,15 +20,15 @@ Python-Small-Tools/
 │   ├── Format-Conversion/ ✅ Completed
 │   └── File-Filter/ ✅ Completed
 ├── Data-Processing/
-│   ├── Excel-CSV-Handle/
+│   ├── Excel-CSV-Handle/ ✅ Completed
 │   ├── Excel-Cell-Extractor/ ✅ Completed
-│   ├── Data-Cleaning/
-│   ├── Simple-Analysis/
+│   ├── Data-Visualization/ ✅ Completed
+│   ├── Simple-Analysis/ ✅ Completed
 │   └── List-Utils/ ✅ Completed
 ├── Web-Crawler/
 │   ├── Simple-Crawler/ ✅ Completed
 │   ├── Wallpaper-Crawler/ ✅ Completed
-│   └── Book-List-Crawler/
+│   └── Book-List-Crawler/ ✅ Completed
 └── Daily-Tools/
     ├── To-Do-List/ ✅ Completed
     ├── Simple-Calculator/ ✅ Completed
@@ -100,6 +100,29 @@ All completed tools follow strict development standards (independent directory +
 - No external dependencies (Python standard library only)
 - Human-readable output with progress & success summary
 
+### [11. Excel-CSV-Handle (Data-Processing)](Data-Processing/Excel-CSV-Handle)
+- Batch processing for Excel/CSV files (recursive directory scan)
+- Comprehensive data cleaning (duplicates/missing values/empty rows)
+- Multi-encoding support for CSV (solve garbled text issue)
+- Cross-format conversion (Excel ↔ CSV) + timestamped output
+
+### [12. Simple-Analysis (Data-Processing)](Data-Processing/Simple-Analysis)
+- Generate descriptive stats, correlation matrix, and categorical insights
+- Missing value analysis (count + percentage) for all columns
+- Comprehensive report generation (timestamped text files)
+- Auto CSV encoding detection + cross-platform support
+
+### [13. Book-List-Crawler (Web-Crawler)](Web-Crawler/Book-List-Crawler)
+- Crawl public domain books from Project Gutenberg (legal data source)
+- Two-level crawling (list → detail page) for structured data
+- Extract author/language/release date + CSV export with timestamps
+- Random delay + progress tracking + complete error handling
+
+### [14. Data-Visualization (Data-Processing)](Data-Processing/Data-Visualization)
+- Generate 5 chart types (bar/line/pie/histogram/scatter) from Excel/CSV
+- Professional styling with seaborn + high DPI (300) output
+- Cross-platform Chinese character support + smart column filtering
+- Correlation coefficient for scatter plots + small slice filtering for pie charts
 ---
 
 ## 🎯 Development Objectives
